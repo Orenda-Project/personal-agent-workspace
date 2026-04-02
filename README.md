@@ -4,6 +4,88 @@
 
 ---
 
+## For Orenda Team Members — Start Here
+
+This workspace is built for you. Whether you're an engineer, manager, lead, or in people ops — you can have your own personal assistant running in under an hour.
+
+### Step 1 — Install Claude Code
+
+Claude Code is the tool that runs your agent. It works in your terminal.
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+Then open your terminal and type `claude` to sign in with your Anthropic account.
+
+> **No terminal experience?** On Mac, press `Cmd + Space` and search "Terminal". On Windows, search "PowerShell". Type the commands above and press Enter.
+
+### Step 2 — Create your workspace
+
+```bash
+# Clone this repo to get the templates
+git clone https://github.com/Orenda-Project/personal-agent-workspace
+cd personal-agent-workspace
+
+# Create your own workspace folder (anywhere on your computer)
+mkdir ~/my-agent-workspace
+cd ~/my-agent-workspace
+
+# Set up the folder structure
+mkdir -p memory agents domains/projects domains/team domains/communications domains/contacts/people logs skills/daily-standup plans
+```
+
+### Step 3 — Copy the starter templates from spec.md
+
+Open [spec.md](spec.md) and go to **Part 7 — Starter Kit**. It has copy-paste templates for every file you need:
+
+| Template | What to name it | Where to put it |
+|----------|----------------|-----------------|
+| `CLAUDE.md` template | `CLAUDE.md` | Root of your workspace |
+| `MEMORY.md` template | `MEMORY.md` | Root of your workspace |
+| `STANDUP.md` template | `STANDUP.md` | Root of your workspace |
+| `memory/profile.md` template | `memory/profile.md` | Fill in your role + goals |
+| `memory/context.md` template | `memory/context.md` | Fill in your current priorities |
+| `skills/daily-standup/SKILL.md` template | `skills/daily-standup/SKILL.md` | The standup skill |
+
+### Step 4 — Fill in your details
+
+Open `memory/profile.md` and write a few lines about yourself:
+- Your role and what you're responsible for
+- Your current top priorities
+- Key people you work with
+
+The more you put in, the better your agent will know you. Even 10 bullet points is enough to start.
+
+### Step 5 — Connect Gmail (optional but recommended)
+
+Connecting Gmail means your agent reads your emails at the start of every session, tracks everyone who contacts you, and drafts replies for your approval.
+
+See **Part 3 — Step 7** in [spec.md](spec.md) for setup instructions.
+
+### Step 6 — Open your workspace
+
+```bash
+cd ~/my-agent-workspace
+claude
+```
+
+Your agent will greet you, read your context, check for emails, and ask what you want to work on.
+
+---
+
+### Which parts of spec.md are most useful for your role?
+
+| Your Role | Go to |
+|-----------|-------|
+| Manager | Part 4 — Example A |
+| Tech / Product Lead | Part 4 — Example B |
+| People Ops / HR | Part 4 — Example C |
+| Engineer | Part 3 (full setup) + connect Jira MCP |
+| Any role | Part 7 — Starter Kit (copy-paste templates) |
+
+---
+
 ## How to Use This Repo
 
 Read **[spec.md](spec.md)** — it's the full guide.
